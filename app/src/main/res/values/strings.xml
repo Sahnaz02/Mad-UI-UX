@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MedAlert</string>
+
+    <!-- Subtitle Text -->
+    <string name="subtitle_text">Never miss a dose again!</string>
+
+    <!-- Button text -->
+    <string name="get_started">GET STARTED!</string>
+
+</resources>
