@@ -4,6 +4,82 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".screens.LoginActivity">
+    tools:context=".screens.LoginActivity"
+    android:background="@drawable/gradient_background">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="331dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Email EditText -->
+            <EditText
+                android:id="@+id/editTextTextEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter your email or username"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="10dp" />
+
+            <!-- Password EditText (newly added) -->
+            <EditText
+                android:id="@+id/editTextTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:layout_marginTop="20dp" />
+
+
+
+            <!-- Forgot Password Text -->
+            <TextView
+                android:id="@+id/forgotPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Forgot password?"
+                android:textColor="#6A1B9A"
+                android:textSize="12sp" />
+
+            <!-- Login Button -->
+            <Button
+                android:layout_marginTop="18dp"
+                android:id="@+id/loginButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LOGIN"
+                android:textColor="#FFFFFF"
+                android:background="@android:color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_marginTop="34dp"
+                android:id="@+id/or"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="OR"
+                android:textAlignment="center"/>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
