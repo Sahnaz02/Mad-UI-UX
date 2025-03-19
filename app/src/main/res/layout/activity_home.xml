@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".screens.HomeActivity">
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:src="@drawable/logowhite"
+        android:contentDescription="Logo"
+        android:background="@drawable/logoshape"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp" />
+
+    <!-- CardView to create the white background container -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/welcomeCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="-10dp"
+        android:layout_marginRight="120dp"
+        android:backgroundTint="@android:color/white"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Title Text ("WELCOME!") -->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="WELCOME!"
+            android:textColor="#6F88C9"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <!-- Description Text ("Stay on top of your medications with MedAlert!") -->
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="220dp"
+            android:text="Stay on top of your medications with MedAlert!"
+            android:textColor="#1B17A2"
+            android:textSize="11sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnCreateProfile"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="Create Profile"
+        android:drawableRight="@drawable/cicle_grey"
+        android:background="@drawable/getstarted"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeCard"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnRemainder"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="Remainders"
+        android:drawableRight="@drawable/bell"
+        android:background="@drawable/getstarted"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCreateProfile"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnHealthReports"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="Health Reports"
+        android:drawableRight="@drawable/report"
+        android:background="@drawable/getstarted"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRemainder"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
