@@ -7,6 +7,17 @@
     tools:context=".screens.LoginActivity"
     android:background="@drawable/gradient_background">
 
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:src="@drawable/logowhite"
+        android:contentDescription="Logo"
+        android:background="@drawable/logoshape"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="409dp"
@@ -77,19 +88,20 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 android:text="Forgot password?"
-                android:textColor="#6A1B9A"
+                android:textColor="#A5A4BB"
                 android:textSize="12sp" />
 
             <!-- Login Button -->
             <Button
-                android:layout_marginTop="18dp"
                 android:id="@+id/loginButton"
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/getstarted"
                 android:text="LOGIN"
                 android:textColor="#FFFFFF"
-                android:background="@android:color/white"
-                android:textSize="16sp" />
+                android:textSize="16sp"/>
 
             <TextView
                 android:layout_marginTop="34dp"
@@ -132,6 +144,8 @@
 
 
     </androidx.cardview.widget.CardView>
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
