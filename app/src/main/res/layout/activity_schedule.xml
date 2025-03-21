@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.ScheduleActivity"
+    android:background="@drawable/gradient_background">
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:src="@drawable/logowhite"
+        android:contentDescription="Logo"
+        android:background="@drawable/logoshape"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp" />
+
+    <TextView
+        android:id="@+id/dayCounter1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DAY 50 TODAY"
+        android:textColor="@color/dark_blue"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp" />
+
+    <!-- Calendar View -->
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:dateTextAppearance="@android:style/TextAppearance.Medium"
+        android:weekDayTextAppearance="@android:style/TextAppearance.Small"
+        app:layout_constraintTop_toBottomOf="@id/dayCounter1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Medication Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/medicationCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="@color/light_gray"
+        app:layout_constraintTop_toBottomOf="@id/calendarView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <!-- Medication Info -->
+            <TextView
+                android:id="@+id/medicationName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paracetamol"
+                android:textColor="@color/dark_blue"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/medicationDosage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="500g"
+                android:textColor="@color/dark_blue"
+                android:textSize="14sp"
+                app:layout_constraintTop_toBottomOf="@id/medicationName"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="4dp" />
+
+            <!-- Smiley Face -->
+            <TextView
+                android:id="@+id/smileyFace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="😊"
+                android:textSize="40sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Tab Layout -->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        app:tabBackground="@drawable/tab_unselected_background"
+        app:tabIndicatorHeight="0dp"
+        app:tabTextColor="@color/dark_blue"
+        app:tabSelectedTextColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/medicationCard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daily" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weekly" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monthly" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        app:tabBackground="@drawable/tab_unselected_background"
+        app:tabIndicatorHeight="0dp"
+        app:tabTextColor="@color/dark_blue"
+        app:tabSelectedTextColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/tabLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daily" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weekly" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monthly" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <!-- Medication Reminders List -->
+
+    <!-- Bottom Navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemIconTint="@color/dark_blue"
+        app:itemTextColor="@color/dark_blue"
+        app:menu="@menu/bottom_navigation_menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
