@@ -72,7 +72,6 @@
         android:text="Create Profile"
         android:drawableRight="@drawable/cicle_grey"
         android:background="@drawable/getstarted"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/welcomeCard"
@@ -87,7 +86,6 @@
         android:text="Remainders"
         android:drawableRight="@drawable/bell"
         android:background="@drawable/getstarted"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnCreateProfile"
@@ -102,7 +100,6 @@
         android:text="Health Reports"
         android:drawableRight="@drawable/report"
         android:background="@drawable/getstarted"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnRemainder"
@@ -117,7 +114,6 @@
         android:text="Family Alerts"
         android:drawableRight="@drawable/people"
         android:background="@drawable/getstarted"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnHealthReports"
@@ -131,7 +127,6 @@
         android:gravity="center"
         android:text="Get Started!"
         android:background="@drawable/getstarted"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnFamilyAlerts"
@@ -142,12 +137,10 @@
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:itemIconTint="@color/material_dynamic_tertiary0"
-        app:itemTextColor="@color/black"
         app:menu="@menu/bottom_navigation_menu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
