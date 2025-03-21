@@ -6,17 +6,14 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
-        <!-- Background color for the main screen -->
-        <color name="blue_background">#0091FF</color>
-
-        <!-- Text color for white text -->
-        <color name="white">#FFFFFFFF</color>
-
-        <!-- Button text color -->
-        <color name="button_text">#0000FF</color>
-
+    <!-- Background color for the main screen -->
+    <color name="blue_background">#0091FF</color>
+    <!-- Text color for white text -->
+    <color name="white">#FFFFFFFF</color>
+    <!-- Button text color -->
+    <color name="button_text">#0000FF</color>
     <color name="dark_blue">#1B17A2</color> <!-- Text and button color -->
     <color name="light_gray">#F5F5F5</color> <!-- Card background -->
     <color name="yellow">#FFC107</color>
-
+    <color name="light_blue">#E6F0FA</color>
 </resources>

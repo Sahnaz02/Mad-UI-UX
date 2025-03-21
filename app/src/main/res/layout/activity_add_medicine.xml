@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.AddMedicineActivity"
+    android:background="@drawable/gradient_background">
+
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:src="@drawable/logowhite"
+        android:contentDescription="Logo"
+        android:background="@drawable/logoshape"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp" />
+
+    <!-- CardView to create the white background container -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/welcomeCard"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@android:color/white"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        app:layout_constraintTop_toBottomOf="@id/logoImage"
+        app:layout_constraintBottom_toTopOf="@id/bottom_navigation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- LinearLayout for form -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Title Text ("ADD MEDICINES") -->
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ADD MEDICINES"
+                android:textColor="@color/dark_blue"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp" />
+
+            <!-- Medicine Name Input -->
+            <EditText
+                android:id="@+id/medicineNameInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Medicine Name*"
+                android:textColor="@color/dark_blue"
+                android:textColorHint="@color/dark_blue"
+                android:background="@drawable/input_background"
+                android:padding="12dp"
+                android:layout_marginTop="16dp" />
+
+            <!-- Dosage Input -->
+            <EditText
+                android:id="@+id/dosageInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Dosage*"
+                android:textColor="@color/dark_blue"
+                android:textColorHint="@color/dark_blue"
+                android:background="@drawable/input_background"
+                android:padding="12dp"
+                android:layout_marginTop="16dp" />
+
+            <!-- Frequency Input -->
+            <EditText
+                android:id="@+id/frequencyInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Frequency*"
+                android:textColor="@color/dark_blue"
+                android:textColorHint="@color/dark_blue"
+                android:background="@drawable/input_background"
+                android:padding="12dp"
+                android:layout_marginTop="16dp" />
+
+            <!-- Time and Day Placeholders (Using LinearLayout for horizontal layout) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:id="@+id/timePlaceholder"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Time"
+                    android:textColor="@color/dark_blue"
+                    android:gravity="center"
+                    android:background="@drawable/input_background"
+                    android:padding="12dp"
+                    android:layout_marginEnd="8dp" />
+
+                <TextView
+                    android:id="@+id/dayPlaceholder"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Day"
+                    android:textColor="@color/dark_blue"
+                    android:gravity="center"
+                    android:background="@drawable/input_background"
+                    android:padding="12dp"
+                    android:layout_marginStart="8dp" />
+            </LinearLayout>
+
+            <!-- Prescription Button -->
+            <Button
+                android:id="@+id/prescriptionButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Prescription"
+                android:textColor="@color/dark_blue"
+                android:background="@drawable/button_background"
+                android:layout_marginTop="16dp" />
+
+            <!-- Save Button -->
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:textColor="@color/white"
+                android:background="@drawable/button_background"
+                android:layout_marginTop="24dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/bottom_navigation_menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
