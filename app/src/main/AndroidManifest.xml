@@ -13,13 +13,19 @@
         android:theme="@style/Theme.MedAlert"
         tools:targetApi="31">
         <activity
-            android:name=".HomeActivity"
+            android:name=".LandingActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        <!-- LoginActivity -->
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity> <!-- LoginActivity -->
         <activity
             android:name=".screens.LoginActivity"
             android:exported="false">
