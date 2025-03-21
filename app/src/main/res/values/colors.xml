@@ -15,4 +15,8 @@
         <!-- Button text color -->
         <color name="button_text">#0000FF</color>
 
+    <color name="dark_blue">#1B17A2</color> <!-- Text and button color -->
+    <color name="light_gray">#F5F5F5</color> <!-- Card background -->
+    <color name="yellow">#FFC107</color>
+
 </resources>
