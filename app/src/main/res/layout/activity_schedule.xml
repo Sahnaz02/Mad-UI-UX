@@ -109,7 +109,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="6dp"
+        android:background="@android:color/transparent"
         app:tabBackground="@drawable/tab_unselected_background"
         app:tabIndicatorHeight="0dp"
         app:tabTextColor="@color/dark_blue"
@@ -141,7 +142,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="6dp"
+        android:background="@android:color/transparent"
         app:tabBackground="@drawable/tab_unselected_background"
         app:tabIndicatorHeight="0dp"
         app:tabTextColor="@color/dark_blue"
@@ -153,17 +155,50 @@
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Daily" />
+            android:text="TAKE" />
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Weekly" />
+            android:text="TAKE" />
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Monthly" />
+            android:text="TAKE" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="6dp"
+        app:tabBackground="@drawable/tab_unselected_background"
+        app:tabIndicatorHeight="0dp"
+        app:tabTextColor="@color/dark_blue"
+        app:tabSelectedTextColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/tabLayout2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REMIND" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REMIND" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REMIND" />
 
     </com.google.android.material.tabs.TabLayout>
 
@@ -174,11 +209,10 @@
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:itemIconTint="@color/dark_blue"
-        app:itemTextColor="@color/dark_blue"
         app:menu="@menu/bottom_navigation_menu"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
