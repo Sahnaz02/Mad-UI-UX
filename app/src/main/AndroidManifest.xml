@@ -13,14 +13,14 @@
         android:theme="@style/Theme.MedAlert"
         tools:targetApi="31">
         <activity
-            android:name=".LandingActivity"
+            android:name=".screens.LandingActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".HomeActivity"
+            android:name=".screens.HomeActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

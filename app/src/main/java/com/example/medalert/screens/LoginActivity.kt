@@ -1,5 +1,6 @@
 package com.example.medalert.screens
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -47,26 +48,10 @@ class LoginActivity : AppCompatActivity() {
 
         // Handle login or sign-up button click
         loginButton.setOnClickListener {
-            if (toggleButton.isChecked) {
-                // Handle Sign Up logic
-                // Example: Collect email, password, and confirm password fields
-                val email = emailEditText.text.toString()
-                val password = passwordEditText.text.toString()
-                val confirmPassword = confirmPasswordEditText.text.toString()
-
-                if (password == confirmPassword) {
-                    // Sign Up logic
-                } else {
-                    // Show error for mismatched passwords
-                }
-            } else {
-                // Handle Login logic
-                // Example: Collect email and password fields
-                val email = emailEditText.text.toString()
-                val password = passwordEditText.text.toString()
-
-                // Login logic
-            }
+            // Navigate to HomeActivity directly (regardless of user input)
+            val intent = Intent(this, HomeActivity::class.java)
+            startActivity(intent)
+            finish() // Close LoginActivity to prevent going back to it
         }
     }
 }
