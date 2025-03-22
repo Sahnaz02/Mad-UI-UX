@@ -3,6 +3,7 @@ package com.example.medalert.screens
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import com.example.medalert.R
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
@@ -10,6 +11,15 @@ class CreateProfileActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_create_profile)
+
+
+
+        val saveButton = findViewById<Button>(R.id.saveButton)
+        saveButton.setOnClickListener {
+            val intent = Intent(this, ViewHealthActivity::class.java)
+            startActivity(intent)
+        }
+
         val bottomNavigationView: BottomNavigationView = findViewById(R.id.bottom_navigation)
         bottomNavigationView.setOnNavigationItemSelectedListener { item ->
             when (item.itemId) {

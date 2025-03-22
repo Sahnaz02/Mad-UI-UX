@@ -3,6 +3,7 @@ package com.example.medalert.screens
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import com.example.medalert.R
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
@@ -10,6 +11,20 @@ class LoginV2Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login_v2)
+
+        val btnTakeNow = findViewById<Button>(R.id.btnTakeNow)
+        btnTakeNow.setOnClickListener {
+            val intent = Intent(this, ViewMedTaken::class.java)
+            startActivity(intent)
+        }
+
+        val btnSnooze = findViewById<Button>(R.id.btnSnooze)
+        btnSnooze.setOnClickListener {
+            val intent = Intent(this, ViewSnoozeActivity::class.java)
+            startActivity(intent)
+        }
+
+
         val bottomNavigationView: BottomNavigationView = findViewById(R.id.bottom_navigation)
         bottomNavigationView.setOnNavigationItemSelectedListener { item ->
             when (item.itemId) {
