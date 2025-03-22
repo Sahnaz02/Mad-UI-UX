@@ -14,11 +14,6 @@ class ScheduleActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_schedule)
 
-        // Set up CalendarView for February 2025
-        val calendarView: CalendarView = findViewById(R.id.calendarView)
-        val calendar = Calendar.getInstance()
-        calendar.set(2025, Calendar.FEBRUARY, 1)
-        calendarView.setDate(calendar.timeInMillis, false, true)
 
         // Set up TabLayout
         val tabLayout: TabLayout = findViewById(R.id.tabLayout)

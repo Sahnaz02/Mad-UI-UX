@@ -13,77 +13,77 @@
         android:theme="@style/Theme.MedAlert"
         tools:targetApi="31">
         <activity
-            android:name=".ViewSnoozeActivity"
+            android:name=".screens.ViewSnoozeActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".ViewMedTaken"
+            android:name=".screens.ViewMedTaken"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".ViewRemaindersActivity"
+            android:name=".screens.ViewRemaindersActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".ViewHealthReportsActivity"
+            android:name=".screens.ViewHealthReportsActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".CreateProfileActivity"
+            android:name=".screens.CreateProfileActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".ViewHealthActivity"
+            android:name=".screens.ViewHealthActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".HealthStatusActivity"
+            android:name=".screens.HealthStatusActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".PrintMedicineActivity"
+            android:name=".screens.PrintMedicineActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".AddMedicineActivity"
+            android:name=".screens.AddMedicineActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".ScheduleActivity"
+            android:name=".screens.ScheduleActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".LoginV2Activity"
+            android:name=".screens.LoginV2Activity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
