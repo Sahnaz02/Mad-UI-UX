@@ -1,5 +1,6 @@
 package com.example.medalert.screens
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.CalendarView
 import android.widget.Toast
@@ -13,7 +14,6 @@ class ScheduleActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_schedule)
-
 
         // Set up TabLayout
         val tabLayout: TabLayout = findViewById(R.id.tabLayout)
@@ -38,23 +38,30 @@ class ScheduleActivity : AppCompatActivity() {
         bottomNavigationView.setOnNavigationItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.nav_home -> {
-                    Toast.makeText(this, "Home Selected", Toast.LENGTH_SHORT).show()
+                    val intent = Intent(this, HomeActivity::class.java)
+                    startActivity(intent)
                     true
                 }
                 R.id.nav_remainders -> {
-                    Toast.makeText(this, "Remainders Selected", Toast.LENGTH_SHORT).show()
+                    val intent = Intent(this, ViewRemaindersActivity::class.java)
+                    startActivity(intent)
                     true
                 }
                 R.id.nav_add -> {
-                    Toast.makeText(this, "Add Selected", Toast.LENGTH_SHORT).show()
+                    val intent = Intent(this, AddMedicineActivity::class.java)
+                    startActivity(intent)
+                    // Handle Add click
                     true
                 }
                 R.id.nav_health -> {
-                    Toast.makeText(this, "Health Selected", Toast.LENGTH_SHORT).show()
+                    val intent = Intent(this, HealthStatusActivity::class.java)
+                    startActivity(intent)
                     true
                 }
                 R.id.nav_profile -> {
-                    Toast.makeText(this, "Profile Selected", Toast.LENGTH_SHORT).show()
+                    val intent = Intent(this, ViewHealthActivity::class.java)
+                    startActivity(intent)
+                    // Handle Profile click
                     true
                 }
                 else -> false

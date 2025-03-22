@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.widget.Button
 import com.example.medalert.R
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class splashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,5 +22,6 @@ class splashActivity : AppCompatActivity() {
             startActivity(intent)
             finish() // Finish SplashActivity so the user can't go back to it
         }
+
     }
 }

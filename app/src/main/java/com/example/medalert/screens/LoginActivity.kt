@@ -8,6 +8,7 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.ToggleButton
 import com.example.medalert.R
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class LoginActivity : AppCompatActivity() {
     private lateinit var toggleButton: ToggleButton
@@ -53,5 +54,6 @@ class LoginActivity : AppCompatActivity() {
             startActivity(intent)
             finish() // Close LoginActivity to prevent going back to it
         }
+
     }
 }

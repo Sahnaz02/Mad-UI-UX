@@ -19,25 +19,30 @@ class CreateProfileActivity : AppCompatActivity() {
                     true
                 }
                 R.id.nav_remainders -> {
-                    // Handle Remainders click
+                    val intent = Intent(this, ViewRemaindersActivity::class.java)
+                    startActivity(intent)
                     true
                 }
                 R.id.nav_add -> {
+                    val intent = Intent(this, AddMedicineActivity::class.java)
+                    startActivity(intent)
                     // Handle Add click
                     true
                 }
                 R.id.nav_health -> {
-                    // Handle Health click
+                    val intent = Intent(this, HealthStatusActivity::class.java)
+                    startActivity(intent)
                     true
                 }
                 R.id.nav_profile -> {
+                    val intent = Intent(this, ViewHealthActivity::class.java)
+                    startActivity(intent)
                     // Handle Profile click
                     true
                 }
                 else -> false
             }
         }
-
     }
 
 }

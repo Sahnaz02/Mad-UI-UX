@@ -17,6 +17,21 @@ class HomeActivity : AppCompatActivity() {
             val intent = Intent(this, CreateProfileActivity::class.java)
             startActivity(intent)
         }
+        val RemaindersButton = findViewById<Button>(R.id.btnRemainder)
+        RemaindersButton.setOnClickListener {
+            val intent = Intent(this, ViewRemaindersActivity::class.java)
+            startActivity(intent)
+        }
+        val healthButton = findViewById<Button>(R.id.btnHealthReports)
+        healthButton.setOnClickListener {
+            val intent = Intent(this, ViewHealthReportsActivity::class.java)
+            startActivity(intent)
+        }
+        val familyButton = findViewById<Button>(R.id.btnFamilyAlerts)
+        familyButton.setOnClickListener {
+            val intent = Intent(this, LoginV2Activity::class.java)
+            startActivity(intent)
+        }
         // BottomNavigationView setup
         val bottomNavigationView: BottomNavigationView = findViewById(R.id.bottom_navigation)
         bottomNavigationView.setOnNavigationItemSelectedListener { item ->
